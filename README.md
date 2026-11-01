@@ -8,7 +8,7 @@ read-only AI assistant that reads your deck over an endpoint **you** configure.
 
 *Your deck. Your model. Your machine.*
 
-**[App repository](https://github.com/koihuang/KenjaDeck) · [Privacy Policy](privacy.md) · [Support](https://github.com/koihuang/KenjaDeck/issues)**
+**[Privacy Policy](privacy.md)**
 
 **Coming soon to the Mac App Store.**
 
@@ -31,7 +31,7 @@ PowerPoint 导入导出、全屏放映——并内置一个只读 AI 助手，�
 （OpenAI、DeepSeek、Qwen 或本地 Ollama / LM Studio）回答关于当前文稿的问题。
 无账号、无遥测、无追踪；文稿从不出你的设备。
 
-**[应用仓库](https://github.com/koihuang/KenjaDeck) · [隐私政策](privacy.md) · [支持 / 反馈](https://github.com/koihuang/KenjaDeck/issues)**
+**[隐私政策](privacy.md)**
 
 ---
 
@@ -46,8 +46,7 @@ Publishing notes (matching the sibling KenjaPDF-site):
 - The site lives in `docs/` and is served by GitHub Pages from branch `main`, folder `/docs`
   (repo Settings → Pages): EN at `index.html`, 简体中文 at `zh.html`, 日本語 at `ja.html`,
   privacy at `privacy.html`, plus `CNAME`, `robots.txt`, `sitemap.xml` and `llms.txt`.
-  Screenshots in `docs/assets/` are the framed App Store shots from the main repository
-  (`KenjaDeck/AppStore/screenshots/framed/en/`, contributor-original).
+  Screenshots in `docs/assets/` are the framed App Store shots (contributor-original).
 - DNS: `kenjadeck.kofukuai.com` CNAME → `KenjaHub.github.io`.
 - App Store privacy policy URL: `https://kenjadeck.kofukuai.com/privacy.html`; marketing URL:
   `https://kenjadeck.kofukuai.com`.
