@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KenjaDeck — Mac プレゼンテーションアプリ · スライド、.pptx、読み取り専用 AI アシスタント</title>
+<meta name="description" content="KenjaDeck は高速でオープンな Mac 用プレゼンテーションアプリ:テーマ、レイアウト、150+ の図形、グラフ、PowerPoint ファイル、全画面スライドショーに加え、開いているスライドについて質問に答える読み取り専用 AI アシスタントを内蔵。アカウント不要、トラッキングなし、データ収集なし。">
+<link rel="canonical" href="https://kenjadeck.kofukuai.com/ja.html">
+<link rel="alternate" hreflang="en" href="https://kenjadeck.kofukuai.com/">
+<link rel="alternate" hreflang="zh-Hans" href="https://kenjadeck.kofukuai.com/zh.html">
+<link rel="alternate" hreflang="ja" href="https://kenjadeck.kofukuai.com/ja.html">
+<link rel="alternate" hreflang="x-default" href="https://kenjadeck.kofukuai.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KenjaDeck">
+<meta property="og:title" content="KenjaDeck — Mac プレゼンテーションアプリ">
+<meta property="og:description" content="スライドは数分で仕上がり、自信を持って発表、AI にもスライドについて質問できる。PowerPoint ファイルをそのまま開ける。アカウントもトラッキングもなし。">
+<meta property="og:url" content="https://kenjadeck.kofukuai.com/ja.html">
+<meta property="og:image" content="https://kenjadeck.kofukuai.com/assets/editor.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="KenjaDeck — Mac プレゼンテーションアプリ">
+<meta name="twitter:description" content="テーマ、図形、.pptx と PDF、全画面スライドショー——さらにスライドを読む読み取り専用 AI アシスタント。データ収集は一切なし。">
+<meta name="twitter:image" content="https://kenjadeck.kofukuai.com/assets/editor.png">
+<meta name="theme-color" content="#0e0c10">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e0c10'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='700' fill='%23f0b429' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "KenjaDeck",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "macOS 26",
+  "description": "高速でオープンな Mac 用プレゼンテーションアプリ:テーマとスライドレイアウト、150+ のプリセット図形、表とグラフ、切り替えとアニメーション、PowerPoint .pptx の読み込みと保存、PDF 書き出し、全画面スライドショー——さらに、設定した任意の OpenAI 互換エンドポイントで開いているスライドについて質問に答える読み取り専用 AI アシスタントを内蔵。プライバシーはデフォルトで保護:アカウントなし、分析なし、トラッキングなし。",
+  "url": "https://kenjadeck.kofukuai.com/ja.html",
+  "author": { "@type": "Organization", "name": "KenjaHub", "url": "https://github.com/KenjaHub" },
+  "featureList": [
+    "テーマ、スライドマスターとプレースホルダー付きレイアウト、セクション、ノート、コメント",
+    "150+ のプリセット図形:調整ハンドル、図形に吸着するコネクタ、フリーフォーム、図形の合体",
+    "その場編集のテキスト:フォント、箇条書きと段落番号、段組み、自動調整、縦書き、ハイパーリンク",
+    "スタイル付き表、グラフ、画像のトリミング、音声と動画の再生",
+    "切り替え(Morph を含む)、開始/強調/終了とモーションパスのアニメーション、段落ごとの構築",
+    "全画面スライドショー:発表者ツール、ペン、リハーサルタイマー",
+    "PowerPoint .pptx(.potx と .ppsx も対応)の読み込みと保存、ネイティブの .kenjadeck 形式",
+    "PDF(スライド、ノート、配布資料)、PNG/JPEG 画像、アウトラインの書き出し",
+    "読み取り専用 AI アシスタント:自分の OpenAI 互換モデルでスライドについて質問できる",
+    "AutoRecover が未保存の作業を保護、完全なダークテーマ"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "KenjaDeck はプレゼンテーションをどこかにアップロードしますか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "いいえ。作成・編集・レンダリング・書き出し・発表はすべてお客様の Mac 上でローカルに実行されます。アプリ自身はネットワーク通信を一切開始しません。送信される唯一の通信は、お客様が実行した AI チャットのリクエストで、お客様が設定したエンドポイントへ直接送られます。App Store のプライバシーラベルは「データ収集なし」です。" }
+    },
+    {
+      "@type": "Question",
+      "name": "AI アシスタントはスライドを編集できますか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "いいえ。アシスタントは設計上、読み取り専用です。4 つの検査ツール(スライド全体の概要、スライドの内容、スライドのレンダリング画像、コマンドカタログ)だけを使って質問に答え、読み取りのたびに一字一句の跡がトランスクリプトに表示されます。ファイルの編集・保存・閉じるは一切行わず、会話はメモリ上にのみ存在します。" }
+    },
+    {
+      "@type": "Question",
+      "name": "どの AI モデルを使えますか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "お客様が設定した任意の OpenAI 互換エンドポイント:OpenAI、DeepSeek、Qwen、あるいは Ollama・LM Studio などのローカルサーバーです。API キーはお客様の Mac に保存され、メッセージを送るときにだけ、設定したベース URL へ送られます。AI をまったく設定しなくても、アプリは全機能利用できます。" }
+    },
+    {
+      "@type": "Question",
+      "name": "PowerPoint ファイルを開けますか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "はい。KenjaDeck は .pptx プレゼンテーション(.potx テンプレートと .ppsx スライドショーも対応)を開き、そのまま保存できます。ネイティブの .kenjadeck 形式もあり、PDF(スライド、ノート、テキストを選択できる配布資料)、PNG/JPEG 画像、プレーンテキストのアウトラインを書き出せます。" }
+    },
+    {
+      "@type": "Question",
+      "name": "切り替えやアニメーションに対応していますか?",
+      "acceptedAnswer": { "@type": "Answer", "text": "はい。Morph を含む切り替え、開始・強調・終了とモーションパスのアニメーション、段落ごとの構築にライブプレビュー付きで対応します。発表では全画面スライドショー、発表者ツール、ペン、リハーサルタイマー、メディア再生が使えます。" }
+    },
+    {
+      "@type": "Question",
+      "name": "システム要件は?",
+      "acceptedAnswer": { "@type": "Answer", "text": "KenjaDeck は macOS 26 以降の Apple シリコン搭載 Mac で動作します。" }
+    }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --ink:#0e0c10;
+  --ink-2:#16131a;
+  --ink-3:#1e1a23;
+  --line:rgba(240,180,41,.14);
+  --line-2:rgba(255,255,255,.08);
+  --amber:#f0b429;
+  --amber-soft:#f6c453;
+  --paper:#f3efe6;
+  --paper-dim:#b7b2a6;
+  --paper-faint:#7d7971;
+  --serif:"Fraunces",Georgia,serif;
+  --sans:"Instrument Sans",-apple-system,"Helvetica Neue",sans-serif;
+  --mono:"Spline Sans Mono","SF Mono",Menlo,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--ink);
+  color:var(--paper);
+  font-family:var(--sans);
+  font-size:17px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:3;
+  background:
+    radial-gradient(1200px 600px at 50% -10%, rgba(240,180,41,.07), transparent 60%),
+    radial-gradient(900px 700px at 100% 100%, rgba(120,80,200,.05), transparent 55%);
+}
+body::after{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:2;opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+}
+::selection{background:var(--amber);color:var(--ink)}
+
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px;position:relative;z-index:4}
+
+/* ---------- top bar ---------- */
+.bar{
+  position:sticky;top:0;z-index:10;
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  background:rgba(14,12,16,.82);
+  border-bottom:1px solid var(--line);
+}
+.bar .wrap{display:flex;align-items:center;gap:22px;height:60px}
+.logo{font-family:var(--serif);font-weight:700;font-size:21px;letter-spacing:.01em;color:var(--paper);text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo .dot{width:9px;height:9px;border-radius:50%;background:var(--amber);box-shadow:0 0 14px rgba(240,180,41,.8)}
+.bar nav{margin-left:auto;display:flex;gap:26px;align-items:center}
+.bar nav a{color:var(--paper-dim);text-decoration:none;font-size:14.5px;letter-spacing:.02em;transition:color .18s}
+.bar nav a:hover{color:var(--amber-soft)}
+.lang-menu{position:relative;font-family:var(--mono);font-size:12.5px}
+.lang-menu summary{list-style:none;cursor:pointer;user-select:none;color:var(--paper-faint);border:1px solid var(--line-2);padding:5px 11px;border-radius:99px;display:inline-flex;align-items:center;gap:7px;transition:all .18s}
+.lang-menu summary::-webkit-details-marker{display:none}
+.lang-menu summary::after{content:"";width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-top:4px solid currentColor;margin-top:2px}
+.lang-menu summary:hover,.lang-menu[open] summary{border-color:var(--amber);color:var(--amber)}
+.lang-pop{position:absolute;right:0;top:calc(100% + 10px);background:var(--ink-3);border:1px solid var(--line-2);border-radius:12px;padding:6px;display:flex;flex-direction:column;min-width:132px;z-index:60;box-shadow:0 18px 50px rgba(0,0,0,.55)}
+.lang-pop a{color:var(--paper-dim);text-decoration:none;padding:8px 12px;border-radius:8px;font-size:12.5px;white-space:nowrap;transition:color .15s,background .15s}
+.lang-pop a:hover{background:rgba(240,180,41,.09);color:var(--amber)}
+.lang-pop a[aria-current]{color:var(--amber);pointer-events:none}
+
+/* ---------- hero ---------- */
+.hero{padding:96px 0 40px;position:relative}
+.hero .tc{
+  font-family:var(--mono);font-size:12.5px;color:var(--amber);
+  letter-spacing:.14em;text-transform:uppercase;
+  display:flex;align-items:center;gap:14px;margin-bottom:26px;
+}
+.hero .tc::after{content:"";height:1px;flex:0 0 72px;background:linear-gradient(90deg,var(--amber),transparent)}
+.hero h1{
+  font-family:var(--serif);font-weight:600;
+  font-size:clamp(44px,6.4vw,84px);
+  line-height:1.02;letter-spacing:-.015em;
+  max-width:15ch;
+}
+.hero h1 em{font-style:italic;color:var(--amber);font-weight:500}
+.hero .sub{margin-top:26px;max-width:60ch;color:var(--paper-dim);font-size:19px}
+.hero .sub strong{color:var(--paper);font-weight:600}
+.cta-row{margin-top:38px;display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.cta-soon{
+  display:inline-flex;align-items:center;gap:10px;
+  border:1px solid var(--line);border-radius:12px;
+  padding:15px 22px;font-size:16.5px;font-weight:600;color:var(--paper);
+  background:linear-gradient(180deg,rgba(240,180,41,.10),rgba(240,180,41,.03));
+}
+.cta-soon .tick{width:9px;height:9px;border-radius:50%;background:var(--amber);box-shadow:0 0 12px rgba(240,180,41,.8);animation:blink 1.6s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+.cta-note{font-family:var(--mono);font-size:12.5px;color:var(--paper-faint)}
+
+/* document window w/ cycling captions */
+.screen{
+  margin:64px 0 0;position:relative;border-radius:18px;overflow:hidden;
+  border:1px solid var(--line-2);
+  background:linear-gradient(180deg,#191521,#0d0b11);
+  box-shadow:0 40px 120px rgba(0,0,0,.55), 0 0 0 1px rgba(240,180,41,.06);
+}
+.screen img{display:block;width:100%;height:auto;opacity:.92}
+.screen .cap{
+  position:absolute;left:0;right:0;bottom:34px;text-align:center;pointer-events:none;
+}
+.screen .cap span{
+  display:inline-block;background:rgba(8,6,10,.78);border-radius:8px;
+  padding:10px 18px;font-size:clamp(14px,2vw,19px);font-weight:500;
+  color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.9);
+  opacity:0;animation:capCycle 12s infinite;
+}
+.screen .cap span:nth-child(2){animation-delay:3s}
+.screen .cap span:nth-child(3){animation-delay:6s}
+.screen .cap span:nth-child(4){animation-delay:9s;color:var(--amber-soft)}
+@keyframes capCycle{0%{opacity:0;transform:translateY(6px)}4%,22%{opacity:1;transform:translateY(0)}26%,100%{opacity:0;transform:translateY(-2px)}}
+.screen .tcode{
+  position:absolute;top:16px;right:18px;font-family:var(--mono);font-size:12px;
+  color:rgba(243,239,230,.75);background:rgba(8,6,10,.55);padding:4px 10px;border-radius:6px;
+  letter-spacing:.06em;
+}
+.screen .rec{position:absolute;top:16px;left:18px;display:flex;gap:8px;align-items:center;font-family:var(--mono);font-size:12px;color:rgba(243,239,230,.7);background:rgba(8,6,10,.55);padding:4px 10px;border-radius:6px}
+.rec i{width:8px;height:8px;border-radius:50%;background:#e5484d;animation:blink 1.6s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+
+/* ---------- sections ---------- */
+section{padding:88px 0}
+.sec-head{display:flex;align-items:baseline;gap:18px;margin-bottom:14px}
+.sec-head .idx{font-family:var(--mono);font-size:13px;color:var(--amber);letter-spacing:.1em}
+.sec-head h2{font-family:var(--serif);font-weight:600;font-size:clamp(30px,4vw,46px);letter-spacing:-.01em}
+.sec-lead{color:var(--paper-dim);max-width:64ch;margin-bottom:48px;font-size:17.5px}
+
+/* scenes / workflow */
+.scenes{display:grid;grid-template-columns:1fr;gap:24px}
+.scene{
+  display:grid;grid-template-columns:minmax(300px,4fr) 6fr;gap:38px;align-items:center;
+  border:1px solid var(--line-2);border-radius:16px;padding:34px 32px;
+  background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(255,255,255,.008));
+  transition:border-color .2s, transform .2s;position:relative;overflow:hidden;
+}
+.scene:hover{border-color:rgba(240,180,41,.4);transform:translateY(-3px)}
+.scene .tag{font-family:var(--mono);font-size:12px;color:var(--amber);letter-spacing:.12em;margin-bottom:14px;display:block}
+.scene h3{font-family:var(--serif);font-size:24px;font-weight:600;margin-bottom:10px}
+.scene p{color:var(--paper-dim);font-size:15.5px}
+.scene img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line-2);display:block}
+
+/* feature grid */
+.feat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line-2);border:1px solid var(--line-2);border-radius:16px;overflow:hidden}
+.feat{background:var(--ink);padding:32px 30px;transition:background .2s}
+.feat:hover{background:var(--ink-2)}
+.feat .k{font-family:var(--mono);font-size:12px;color:var(--amber);letter-spacing:.12em;margin-bottom:12px;display:block}
+.feat h3{font-size:19px;font-weight:600;margin-bottom:8px;letter-spacing:.005em}
+.feat p{color:var(--paper-dim);font-size:15px}
+
+/* privacy band */
+.privacy-band{
+  border:1px solid var(--line);border-radius:20px;padding:56px 48px;
+  background:
+    radial-gradient(600px 240px at 12% 0%, rgba(240,180,41,.08), transparent 60%),
+    var(--ink-2);
+  display:grid;grid-template-columns:1.2fr 1fr;gap:44px;align-items:center;
+}
+.privacy-band h2{font-family:var(--serif);font-weight:600;font-size:clamp(28px,3.4vw,40px);line-height:1.1}
+.privacy-band h2 em{font-style:italic;color:var(--amber)}
+.privacy-band p{color:var(--paper-dim);margin-top:14px;max-width:52ch}
+.pill-list{display:flex;flex-direction:column;gap:12px}
+.pill{
+  display:flex;align-items:center;gap:12px;padding:15px 20px;
+  border:1px solid var(--line-2);border-radius:12px;
+  font-size:15.5px;background:rgba(14,12,16,.6);
+}
+.pill b{color:var(--amber-soft);font-weight:600}
+.pill .tick{color:var(--amber);font-family:var(--mono)}
+
+/* faq */
+.faq{max-width:780px}
+.faq details{border-bottom:1px solid var(--line-2);padding:6px 0}
+.faq summary{
+  cursor:pointer;list-style:none;padding:20px 4px;font-size:18px;font-weight:600;
+  display:flex;align-items:center;gap:16px;transition:color .15s;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"Q";font-family:var(--mono);color:var(--amber);font-size:14px;border:1px solid var(--line);border-radius:8px;width:30px;height:30px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 30px}
+.faq summary:hover{color:var(--amber-soft)}
+.faq details[open] summary{color:var(--amber-soft)}
+.faq details p{padding:0 4px 22px 50px;color:var(--paper-dim);font-size:15.5px;max-width:62ch}
+
+/* footer */
+footer{border-top:1px solid var(--line-2);padding:52px 0 64px;margin-top:40px}
+.foot{display:flex;gap:40px;flex-wrap:wrap;align-items:flex-start;justify-content:space-between}
+.foot .logo{font-size:19px}
+.foot small{display:block;color:var(--paper-faint);font-family:var(--mono);font-size:12px;margin-top:10px}
+.foot nav{display:flex;gap:24px;flex-wrap:wrap}
+.foot nav a{color:var(--paper-dim);text-decoration:none;font-size:14.5px}
+.foot nav a:hover{color:var(--amber-soft)}
+
+/* reveal animation */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rv.on{opacity:1;transform:none}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}
+
+@media(max-width:900px){
+  .scene{grid-template-columns:1fr;padding:26px 22px;gap:0}
+  .scene img{margin-top:20px}
+  .feat-grid{grid-template-columns:1fr}
+  .privacy-band{grid-template-columns:1fr;padding:40px 30px}
+  .bar nav > a{display:none}
+  section{padding:64px 0}
+  .hero{padding:64px 0 24px}
+}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="/"><span class="dot"></span>KenjaDeck</a>
+    <nav>
+      <a href="#workflow">ワークフロー</a>
+      <a href="#features">機能</a>
+      <a href="#privacy">プライバシー</a>
+      <a href="#faq">FAQ</a>
+      <details class="lang-menu">
+        <summary>Language</summary>
+        <div class="lang-pop">
+          <a href="/" hreflang="en">English</a>
+          <a href="/zh.html" hreflang="zh-Hans">简体中文</a>
+          <a href="/ja.html" hreflang="ja" aria-current="page">日本語</a>
+        </div>
+      </details>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="tc rv">スライド · .pptx · 読み取り専用 AI · この Mac の中で</div>
+    <h1 class="rv d1">スライドを作り、AI に尋ね、<em>発表する。</em></h1>
+    <p class="sub rv d2">
+      KenjaDeck は<strong>高速でオープンな Mac 用プレゼンテーションアプリ</strong>——テーマ、レイアウト、
+      図形、グラフ、PowerPoint ファイル、全画面スライドショーに加え、スライドについて質問に答える
+      <strong>読み取り専用 AI アシスタント</strong>を内蔵しています。プライバシーはデフォルトで保護:
+      収集も追跡も一切ありません。
+    </p>
+    <div class="cta-row rv d3">
+      <span class="cta-soon"><span class="tick"></span>まもなく Mac App Store に登場</span>
+      <span class="cta-note">macOS 26+ · Apple シリコン · アカウントもキーも不要</span>
+    </div>
+
+    <figure class="screen rv d3">
+      <img src="assets/editor.png" alt="Mac で動く KenjaDeck:「Northern Lights」スライドがエディタで開き、左にサムネイル、キャンバスにフローチャートのスライド、上部にリボンツールバー" width="2560" height="1600" fetchpriority="high">
+      <div class="rec"><i></i>ローカルファースト</div>
+      <div class="tcode">読み取り専用 AI</div>
+      <div class="cap">
+        <span>Your decks never leave your Mac</span>
+        <span>スライドがこの Mac の外へ出ることはありません</span>
+        <span>文稿从不出你的 Mac</span>
+        <span>— KenjaDeck,賢者のスライド</span>
+      </div>
+    </figure>
+  </section>
+
+  <!-- WORKFLOW -->
+  <section id="workflow">
+    <div class="sec-head rv"><span class="idx">01</span><h2>白紙のスライドから、拍手まで</h2></div>
+    <p class="sec-lead rv">作って、尋ねて、発表して、共有する——ひとつの静かなネイティブアプリで。</p>
+    <div class="scenes">
+      <article class="scene rv">
+        <div>
+          <span class="tag">ステップ 01 · 作成</span>
+          <h3>スライドは数分で仕上がる</h3>
+          <p>テーマとスライドレイアウトから始めるか、すべてを継承するスライドマスターとプレースホルダーを。セクション付きの本格的なスライド一覧、150+ のプリセット図形、表とグラフ、そして全体をキーボード操作で。夜の作業には完全なダークテーマも。</p>
+        </div>
+        <img src="assets/sorter.png" alt="KenjaDeck のスライド一覧:「Northern Lights」がイントロ・科学・現場のセクションに分かれ、ドラッグで並べ替えられる" loading="lazy" width="2560" height="1600">
+      </article>
+      <article class="scene rv d1">
+        <div>
+          <span class="tag">ステップ 02 · 質問</span>
+          <h3>いっしょに読んでくれる AI アシスタント</h3>
+          <p>AI ペインを開いてスライドについて質問すると、実際に検査した内容からだけ答えます。読み取りのたびに跡が一行ずつ表示される仕組み。設計上、読み取り専用:編集・保存・ファイルを閉じることは決してありません。モデルは持ち込み制:任意の OpenAI 互換エンドポイントを使い、キーはあなたの Mac の中だけ。設定しなくても全機能が使えます。</p>
+        </div>
+        <img src="assets/ai.png" alt="KenjaDeck の AI チャットペイン:スライドについての質問、inspect_document ツールの跡、開いたスライドの横に表示された回答" loading="lazy" width="2560" height="1600">
+      </article>
+      <article class="scene rv">
+        <div>
+          <span class="tag">ステップ 03 · 発表</span>
+          <h3>自信を持って発表する</h3>
+          <p>F5 で最初から、Shift+F5 で現在のスライドから再生。Morph を含む切り替え、開始・強調・終了とモーションパスのアニメーション、段落ごとの構築にライブプレビュー。本番では発表者ツール、ペン、リハーサルタイマー、メディア再生。</p>
+        </div>
+        <img src="assets/show.png" alt="KenjaDeck の全画面スライドショー:「Northern Lights」の What we'll cover スライドが暗い舞台いっぱいに広がる" loading="lazy" width="2560" height="1600">
+      </article>
+      <article class="scene rv d1">
+        <div>
+          <span class="tag">ステップ 04 · 共有</span>
+          <h3>PowerPoint ファイルをそのまま</h3>
+          <p>.pptx プレゼンテーション(.potx テンプレートと .ppsx スライドショーも)を開いて、そのまま保存。必要ならネイティブの .kenjadeck 形式を。PDF 書き出し(スライド、ノート、テキストを選択できる配布資料)、PNG/JPEG 画像、プレーンテキストのアウトラインにも対応。AutoRecover が未保存の作業を守ります。</p>
+        </div>
+        <img src="assets/export.png" alt="KenjaDeck の書き出し画面:PDF ドキュメントの作成、配布資料の作成、ファイルの種類の変更を Backstage 風メニューで表示" loading="lazy" width="2560" height="1600">
+      </article>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <div class="sec-head rv"><span class="idx">02</span><h2>スライドに必要なすべてを、邪魔せずに</h2></div>
+    <p class="sec-lead rv">クラウドのダッシュボードではなく、あなたの発表に真剣に向き合う小さなネイティブアプリ。</p>
+    <div class="feat-grid rv">
+      <div class="feat">
+        <span class="k">図形</span>
+        <h3>150+ のプリセット図形</h3>
+        <p>調整ハンドル、移動しても吸着し続けるコネクタ、フリーフォーム・曲線・スケッチツール、図形の合体——グラデーション・画像・パターンの塗り、破線、矢印、影、グローと組み合わせられます。</p>
+      </div>
+      <div class="feat">
+        <span class="k">テキスト</span>
+        <h3>本物のテキストエンジン</h3>
+        <p>その場で編集、完全なフォントと段落の書式:箇条書きと段落番号、段組み、自動調整、縦書き、フィールド、ハイパーリンク——発表にふさわしいタイポグラフィを。</p>
+      </div>
+      <div class="feat">
+        <span class="k">メディア</span>
+        <h3>表・グラフ・音声・動画</h3>
+        <p>スタイル付きの表、会場の後ろまで読めるグラフ、MP3・AAC・FLAC などの再生——H.264、HEVC、VP9、AV1 の動画にも対応。</p>
+      </div>
+      <div class="feat">
+        <span class="k">AI</span>
+        <h3>設計から、読み取り専用</h3>
+        <p>アシスタントは何でも見られます——スライドの概要、内容、レンダリング画像——けれど何も触りません。4 つの検査ツール、読み取りごとの一行の跡、会話はメモリ上だけ。あなたのモデル、あなたのキー、あなたの Mac。</p>
+      </div>
+      <div class="feat">
+        <span class="k">自動化</span>
+        <h3>200+ のコマンド、すべてスクリプト可能</h3>
+        <p>すべての操作は安定した ID と取り消しを持つコマンド——CLI・JSON 制御チャネル・MCP サーバーから同じ動詞で駆動でき、人もスクリプトも AI エージェントも同じ言葉で語ります。</p>
+      </div>
+      <div class="feat">
+        <span class="k">ダーク</span>
+        <h3>目にやさしい</h3>
+        <p>エディタも一覧もペインも、完全なダークテーマ——深夜のスライド作りでもまぶしくない。もちろん、日が出ていればライトテーマで。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIVACY -->
+  <section id="privacy">
+    <div class="sec-head rv"><span class="idx">03</span><h2>プライバシーはデフォルト</h2></div>
+    <div class="privacy-band rv">
+      <div>
+        <h2>アカウントなし。クラウドなし。<em>トラッキングなし。</em></h2>
+        <p>KenjaDeck は良い道具らしく働きます——あなたのマシンで仕事をし、誰とも話しません。スライドがアップロードされることはなく、ネットワークを使うのはあなたが設定した任意の AI チャットだけで、指定したエンドポイントへ直接届きます。サインインするものも、漏えいしうるものも、何もありません。</p>
+        <p style="margin-top:18px"><a href="privacy.html" style="color:var(--amber-soft)">プライバシーポリシーを読む →</a></p>
+      </div>
+      <div class="pill-list">
+        <div class="pill"><span class="tick">✓</span><span><b>プレゼンテーション:</b>アップロードされません</span></div>
+        <div class="pill"><span class="tick">✓</span><span><b>アカウントと分析:</b>なし——データ収集なし</span></div>
+        <div class="pill"><span class="tick">✓</span><span><b>AI チャット:</b>あなたのエンドポイント、キー、Mac</span></div>
+        <div class="pill"><span class="tick">✓</span><span><b>テレメトリー:</b>一切なし</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="sec-head rv"><span class="idx">04</span><h2>よくある質問</h2></div>
+    <div class="faq rv">
+      <details open>
+        <summary>KenjaDeck はプレゼンテーションをどこかにアップロードしますか?</summary>
+        <p>いいえ。作成・編集・レンダリング・書き出し・発表はすべてお客様の Mac 上でローカルに実行されます。アプリ自身はネットワーク通信を一切開始しません。送信される唯一の通信は、お客様が実行した AI チャットのリクエストで、お客様が設定したエンドポイントへ直接送られます。App Store のプライバシーラベルは「データ収集なし」です。</p>
+      </details>
+      <details>
+        <summary>AI アシスタントはスライドを編集できますか?</summary>
+        <p>いいえ。アシスタントは設計上、読み取り専用です。4 つの検査ツール——スライド全体の概要、スライドの内容、レンダリング画像、コマンドカタログ——だけを使って質問に答え、読み取りのたびにその跡が一行で表示されます。編集・保存・ファイルを閉じることは決してなく、会話はメモリ上にのみ存在します。</p>
+      </details>
+      <details>
+        <summary>どの AI モデルを使えますか?</summary>
+        <p>お客様が設定した任意の OpenAI 互換エンドポイント:OpenAI、DeepSeek、Qwen、あるいは Ollama・LM Studio などのローカルサーバーです。API キーはお客様の Mac に保存され、メッセージを送るときにだけ、設定したベース URL へ送られます。AI を設定しなくても全機能が使えます。</p>
+      </details>
+      <details>
+        <summary>PowerPoint ファイルを開けますか?</summary>
+        <p>はい。.pptx プレゼンテーション(.potx テンプレートと .ppsx スライドショーも)を開き、そのまま保存できます。ネイティブの .kenjadeck 形式もあり、PDF(スライド、ノート、テキストを選択できる配布資料)、PNG/JPEG 画像、プレーンテキストのアウトラインを書き出せます。</p>
+      </details>
+      <details>
+        <summary>切り替えやアニメーションに対応していますか?</summary>
+        <p>はい。Morph を含む切り替え、開始・強調・終了とモーションパスのアニメーション、段落ごとの構築にライブプレビュー付きで対応します。発表では全画面スライドショー、発表者ツール、ペン、リハーサルタイマー、メディア再生が使えます。</p>
+      </details>
+      <details>
+        <summary>システム要件は?</summary>
+        <p>KenjaDeck は macOS 26 以降の Apple シリコン搭載 Mac で動作します。</p>
+      </details>
+    </div>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a class="logo" href="/"><span class="dot"></span>KenjaDeck</a>
+      <small>© 2026 KenjaHub · 賢者のスライド</small>
+    </div>
+    <nav>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="https://github.com/KenjaHub" rel="noopener">GitHub</a>
+      <a href="https://github.com/koihuang/KenjaDeck/issues" rel="noopener">サポート</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+document.addEventListener('click',e=>{document.querySelectorAll('details.lang-menu[open]').forEach(d=>{if(!d.contains(e.target))d.removeAttribute('open')})});
+</script>
+</body>
+</html>

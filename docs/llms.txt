@@ -1,0 +1,22 @@
+# KenjaDeck
+
+> KenjaDeck is a fast, open presentation app for Mac, made by KenjaHub: themes and slide masters, 150+ preset shapes, tables and charts, transitions and animations (including Morph), full-screen slide shows with presenter view, PowerPoint .pptx open and save, and PDF/PNG/JPEG export — plus a built-in read-only AI assistant that answers questions about the open deck over any OpenAI-compatible endpoint the user configures (OpenAI, DeepSeek, Qwen, or a local Ollama/LM Studio). Private by default: no accounts, no analytics, no tracking; decks never leave the machine (App Store privacy label: Data Not Collected). Coming soon to the Mac App Store.
+
+Key facts:
+
+- Platform: macOS 26 or later, Apple silicon.
+- Making decks: themes, slide masters and eleven layouts with inheriting placeholders, sections, notes, comments, headers and footers; a real slide sorter; 150+ preset shapes with adjust handles, glued connectors, freeform tools and merge shapes; in-place text editing with bullets/numbering, columns, autofit and vertical text; tables with styles, charts, pictures with crop; audio (MP3, AAC, FLAC, ALAC, Ogg, Opus, WAV, AIFF) and video (H.264, HEVC, VP9, AV1) playback.
+- Presenting: transitions including Morph, entrance/emphasis/exit and motion-path animations, by-paragraph builds with live preview; full-screen slide show, presenter view, pen, rehearse timings.
+- Files: opens and saves PowerPoint .pptx (also .potx and .ppsx); native .kenjadeck format; exports PDF (slides, notes pages, handouts with selectable text), PNG/JPEG and plain-text outlines; AutoRecover keeps unsaved work.
+- AI assistant: read-only by design — a whitelist of four inspection tools (deck overview, slide contents, rendered slide, command catalogue); every read shows as a trace line; it never edits, saves or closes the file; the transcript lives in memory only. Bring your own model: any OpenAI-compatible endpoint; the API key stays on the user's Mac and is sent only to the configured base URL. The app is fully functional without AI.
+- Privacy: everything runs locally; the app initiates no network traffic of its own — the only traffic ever sent is an AI-chat request the user triggered, delivered straight to the endpoint they configured. No accounts, no analytics, no telemetry, no tracking.
+- Automation: every action is a command with a stable id and undo — 200+ commands, drivable from the CLI, a JSON control channel and an MCP server.
+- Vendor: KenjaHub — https://github.com/KenjaHub · App repository: https://github.com/koihuang/KenjaDeck · Support: https://github.com/koihuang/KenjaDeck/issues · Email: kenjasoft@kofukuai.com
+
+## Pages
+
+- [English landing page](https://kenjadeck.kofukuai.com/): workflow, features, privacy and FAQ.
+- [简体中文落地页](https://kenjadeck.kofukuai.com/zh.html): 工作流、功能、隐私与常见问题。
+- [日本語ページ](https://kenjadeck.kofukuai.com/ja.html): ワークフロー、機能、プライバシーと FAQ。
+- [Privacy policy](https://kenjadeck.kofukuai.com/privacy.html): full policy (Data Not Collected; trilingual Markdown copy in the repository as privacy.md).
+- [Sitemap](https://kenjadeck.kofukuai.com/sitemap.xml): all pages with en/zh/ja hreflang alternates.
